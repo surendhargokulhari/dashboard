@@ -14,16 +14,16 @@ export default function AppNavbar() {
     >
       <Container fluid>
 
-        {/* Brand */}
+       
         <Navbar.Brand className="fw-bold d-flex align-items-center gap-2">
           <i className="bi bi-kanban-fill"></i>
           Mini Project Dashboard
         </Navbar.Brand>
 
-        {/* Toggle Button */}
+     
         <Navbar.Toggle aria-controls="nav-links" />
 
-        {/* Collapsible Area */}
+       
         <Navbar.Collapse id="nav-links">
           <Nav className="ms-auto d-flex align-items-center gap-3">
 
@@ -32,7 +32,7 @@ export default function AppNavbar() {
               Tasks
             </Nav.Link>
 
-            {/* DARK / LIGHT MODE SWITCH */}
+            
             <div className="ms-3 d-flex align-items-center">
               <i className={`bi ${dark ? "bi-moon-stars-fill" : "bi-brightness-high-fill"} me-2`}></i>
               <Form.Check

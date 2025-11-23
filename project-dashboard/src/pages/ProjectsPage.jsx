@@ -73,7 +73,7 @@ export default function ProjectsPage() {
         Add New Project
       </Button>
 
-      {/* ⭐ CENTER TAGLINE WHEN NO PROJECTS */}
+   
       {projects.length === 0 && (
         <div
           style={{
@@ -89,7 +89,6 @@ export default function ProjectsPage() {
         </div>
       )}
 
-      {/* ⭐ SHOW PROJECT CARDS */}
       {projects.map((p) => (
         <ProjectCard
           key={p.id}
@@ -102,7 +101,7 @@ export default function ProjectsPage() {
         />
       ))}
 
-      {/* MODAL */}
+      
       <Modal show={show} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
           <Modal.Title>{editing ? "Edit Project" : "Add Project"}</Modal.Title>

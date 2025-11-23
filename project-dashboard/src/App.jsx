@@ -14,8 +14,7 @@ export default function App() {
 
         <div style={{ flex: 1 }}>
           <Routes>
-
-            {/* Redirect root ( / ) to /projects */}
+           
             <Route path="/" element={<Navigate to="/projects" replace />} />
 
             <Route path="/projects" element={<ProjectsPage />} />
